@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+const SPEED = 150.0
 
 var last_direction: Vector2 = Vector2.DOWN
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
