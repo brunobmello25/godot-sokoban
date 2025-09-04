@@ -7,8 +7,8 @@ var last_direction: Vector2 = Vector2.DOWN
 @onready var sprite: Sprite2D = $Sprite2D
 
 
-func _physics_process(delta: float) -> void:
-	position += get_direction().normalized() * SPEED * delta
+func _physics_process(_delta: float) -> void:
+	velocity = get_direction().normalized() * SPEED
 
 	move_and_slide()
 
