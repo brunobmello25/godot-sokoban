@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=4 uid="uid://jgsyw5effx6d"]
+[gd_scene load_steps=4 format=4 uid="uid://jgsyw5effx6d"]
 
 [ext_resource type="PackedScene" uid="uid://dqqxvcc187oue" path="res://entities/player.tscn" id="1_46lwt"]
 [ext_resource type="TileSet" uid="uid://df2g824tn514m" path="res://levels/level-tileset.tres" id="1_x25rp"]
+[ext_resource type="PackedScene" uid="uid://yxqf6gg5afvu" path="res://entities/obstacle.tscn" id="3_gmgay"]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -12,5 +13,7 @@ tile_map_data = PackedByteArray("AAATABMAAAACAAIAAAATABIAAAAAAAEAAAATABEAAAACAAE
 tile_set = ExtResource("1_x25rp")
 
 [node name="Player" parent="." instance=ExtResource("1_46lwt")]
-position = Vector2(256, 190)
-collision_mask = 2
+position = Vector2(95, 180)
+
+[node name="Obstacle" parent="." instance=ExtResource("3_gmgay")]
+position = Vector2(233, 173)
